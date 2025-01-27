@@ -10,8 +10,6 @@ application=Flask(__name__)
 app=application
 
 ## Route for a home page
-
-
 @app.route('/',methods=['GET','POST'])
 def predict_datapoint():
     if request.method=='GET':
